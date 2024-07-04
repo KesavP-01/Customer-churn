@@ -34,4 +34,4 @@ This code implements a neural network using TensorFlow and Keras for predicting 
 
 ## Results
 
-- Achieved a accuracy of **93.2%** on the given data.
+- Achieved a accuracy of **93.6%** on the given data.
