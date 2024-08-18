@@ -49,4 +49,4 @@ python scripts/neural_network_churn.py
 
 ## Results
 
-The neural network achieved an accuracy of **83.6%** on the test data. The confusion matrix highlights the model's performance across different classes, demonstrating its effectiveness in predicting customer churn.
+The neural network achieved an accuracy of **86.3%** on the test data. The confusion matrix highlights the model's performance across different classes, demonstrating its effectiveness in predicting customer churn.
