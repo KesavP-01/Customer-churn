@@ -1,37 +1,52 @@
 
-# Neural Network for Churn Prediction
+# Customer Churn Prediction using Neural Networks
 
 ## Overview
-This code implements a neural network using TensorFlow and Keras for predicting customer churn. The dataset used for training and evaluation is provided in the file Churn.csv.
 
+This repository contains a neural network model built with TensorFlow and Keras for predicting customer churn. The model processes customer data, learns patterns, and classifies customers as likely to churn or not. It achieves a robust accuracy of **93.6%** on the test data. The dataset used for training and evaluation is located in the `data` folder.
 
+## Features
 
+- Preprocessing of customer data, including feature scaling and categorical encoding.
+- Sequential neural network model with dense layers and ReLU activations.
+- Model training using binary cross-entropy loss and Adam optimizer.
+- Model evaluation via accuracy and confusion matrix metrics.
+
+## Project Structure
+
+```plaintext
+Customer-churn-main/
+│
+├── data/                   # Contains the customer churn dataset (Churn.csv)
+├── models/                 # Folder for saving trained models
+├── scripts/                # Python scripts for training and evaluating the model
+├── churnModel.egg-info/    # Package information
+├── setup.py                # Setup file for project dependencies and installation
+├── LICENSE                 # Project license
+└── README.md               # Project documentation
+```
+## Installation
+**Clone the repository:**
+
+```
+git clone https://github.com/KesavP-01/Customer-churn.git
+```
+**Navigate to the project directory:**
+```
+cd Customer-churn-main
+```
+**Install the required dependencies:**
+```
+pip install -r requirements.txt
+```
 ## Usage
-- Clone or download the repository containing the code.
-- Ensure that Churn.csv is present in the same directory as the Python script.
-- Run the Python script neural_network_churn.py.
+Ensure the dataset Churn.csv is available in the data folder.
 
-## Description
-### Preprocessing Phase:
-
-- The dataset is loaded from Churn.csv.
-- Features and labels are extracted.
-- Categorical features are encoded using one-hot encoding.
-- The dataset is split into training and testing sets.
-- Features are standardized using standard scaling.
-### Neural Network Initialization:
-
-- A Sequential model is initialized.
-- Dense layers with ReLU activation functions are added.
-- The output layer uses a sigmoid activation function for binary classification.
-- The model is compiled using binary cross-entropy loss and Adam optimizer.
-- Training is performed on the training set with validation split and specified batch size and epochs.
-### Predictions:
-
-- Predictions are made on the test set.
-- Thresholding is applied to convert probabilities to binary predictions.
-- Confusion matrix and accuracy score are calculated for model evaluation.
+**Run the Python script to train the model:**
+```
+python scripts/neural_network_churn.py
+```
 
 ## Results
 
-- Achieved a accuracy of **93.6%** on the given data.
+The neural network achieved an accuracy of **83.6%** on the test data. The confusion matrix highlights the model's performance across different classes, demonstrating its effectiveness in predicting customer churn.
