@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains a neural network model built with TensorFlow and Keras for predicting customer churn. The model processes customer data, learns patterns, and classifies customers as likely to churn or not. It achieves a robust accuracy of **93.6%** on the test data. The dataset used for training and evaluation is located in the `data` folder.
+This repository contains a neural network model built with TensorFlow and Keras for predicting customer churn. The model processes customer data, learns patterns, and classifies customers as likely to churn or not. It achieves a robust accuracy of **86.3%** on the test data. The dataset used for training and evaluation is located in the `data` folder.
 
 ## Features
 
